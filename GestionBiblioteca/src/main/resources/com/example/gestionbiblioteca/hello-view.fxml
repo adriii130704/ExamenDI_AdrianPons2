@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="598.0" prefWidth="726.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionbiblioteca.HelloController">
+   <children>
+      <ListView fx:id="listaLIbros" layoutX="18.0" layoutY="29.0" prefHeight="523.0" prefWidth="212.0" />
+      <ListView fx:id="listaPrestamos" layoutX="470.0" layoutY="29.0" prefHeight="523.0" prefWidth="226.0" />
+      <Text layoutX="88.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de libros" />
+      <Text layoutX="524.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de prestamos" />
+      <Button fx:id="altaLibrods" layoutX="18.0" layoutY="559.0" mnemonicParsing="false" onAction="#menuAlta" text="ALTA LIBRO" />
+      <Button fx:id="bajaLibros" layoutX="121.0" layoutY="559.0" mnemonicParsing="false" onAction="#bajaLibros" text="BAJA LIBRO" />
+      <ListView fx:id="listaUsuarios" layoutX="235.0" layoutY="29.0" prefHeight="523.0" prefWidth="226.0" />
+      <Text layoutX="303.0" layoutY="21.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista de usuarios" />
+      <Button fx:id="bajaLibros1" layoutX="224.0" layoutY="559.0" mnemonicParsing="false" onAction="#prestar" onDragDetected="#prestar" text="PRESTAR" />
+      <Button fx:id="bajaLibros11" layoutX="307.0" layoutY="559.0" mnemonicParsing="false" onAction="#devolver" onDragDetected="#prestar" text="DEVOLVER" />
+   </children>
+</AnchorPane>
